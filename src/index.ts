@@ -37,7 +37,7 @@ export default {
 		// You will need an admin password. This should be
 		// attached to your Worker as an encrypted secret.
 		// Refer to https://developers.cloudflare.com/workers/configuration/secrets/
-		const BASIC_PASS = env.PASSWORD ?? "password";
+		const BASIC_PASS = env.PASSWORD ?? "admin";
 
 		const url = new URL(request.url);
 
